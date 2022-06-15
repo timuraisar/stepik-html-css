@@ -10,6 +10,7 @@
         body {
             font-family: Verdana, sans-serif;
             margin: 0;  
+            top: 0px;
         }
 
         header {
@@ -25,24 +26,34 @@
             text-align: justify;
         }
         nav {
+            float: left;
             background-color: black;
             top: 0px;
-            height: 50px;
+            height: 70px;
             width: 100%;
             position: -webkit-sticky;
             position: sticky;
             align-items: center;
+            margin-bottom: 30px;
             
         }
         nav a {
-            padding: 20px;
+            display: inline-block;
+            color: lightblue;
+            text-align: center;
+            padding: 14px 16px;
+            padding-top: 20px;
             text-decoration: none;
             font-size: 25px;
-            color: lightblue;
         }
         nav a:hover {
             background-color: rgb(9, 62, 80);
             color: white;
+            height: 36px;
+        }
+        section {
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
         table {
             border-collapse: collapse;
@@ -62,29 +73,29 @@
             background-color: rgb(9, 62, 80);
             color: white;
         }
+        img {
+            margin-top: 20px;
+            width: 70%;
+            height: 70%;
+        }
+        img.panoramic {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
 <body>
-        <p>
-            <img 
+        <figure>
+            <img class="panoramic"
                 src="https://imageup.ru/img102/3954583/iuzhnye_raiony_aksaia-small.jpg"; 
                 title="Южные районы Аксая";
                 alt="Южные районы Аксая"; 
-                height: 480px;
-                width: 1280px;
             >
-        </p>
+        </figure>
     <header>
-        <!-- <p style="text-align: center;">
-            <img 
-                src="https://imageup.ru/img131/3954579/iuzhnye_raiony_aksaia.jpg"; 
-                title="Южные районы Аксая";
-                alt="Южные районы Аксая"; 
-                height: 50px;
-                width: 50%;
-            >
-        </p> -->
         <h1>АКСАЙ</h1>
         <article>
             Второй по величине населенный пункт в Западно-Казахстанской области – город Аксай за годы Независимости
@@ -122,7 +133,14 @@
                 Произрастают дубы, полевой вяз, тополь, кизильник и другие. Водятся лисица, корсак, кабан; из птиц — дрофа, стрепет.
             </p>
         </section>
-        
+
+        <figure>
+            <img src="https://imageup.ru/img182/3955370/22cf9b12-ec1b-4bd8-975c-c69dc20eec22.jpeg" alt="въезд в город">
+            <figcaption>
+                Въездная стелла города
+            </figcaption>
+        </figure>
+    
         <section>
             <h2 id="history">История</h2>
             <p>
@@ -155,7 +173,13 @@
                 (город стоит на плывунах и подтопляемой территории). Были приведены в соответствие с европейским качеством путепровод 
                 через железную дорогу и основные городские автодороги. Все эти работы производились преимущественно иностранными строителями и по своим технологиям. 
             </p>
-
+            <figure>
+                <img src="https://zhaikpress.kz/wp-content/oraloniri/news/img/2021/09/1927E0F1-E032-4CC8-AF6B-EA1D25E11E0F-e1632801994667.jpeg" 
+                alt="вид с высоты на город и самое лучшее здание города">
+                <figcaption>
+                    Вид с высоты на город и самое лучшее здание города
+                </figcaption>
+            </figure>
             <p>
                 Уральские дорожники произвели работы по строительству асфальтированной дороги Уральск-Бурлин-Оренбург, Бурлин-Аксай, Аксай-Илек 
                 (через территорию осваиваемого Карачаганакского месторождения). Первоначально предполагалось, что сырьё с месторождения будет 
@@ -188,6 +212,13 @@
                 комплекса в микрорайоне Кызылтал, современного пожарного депо, административного здания. Имеется проект на строительство многофункционального ЦОНа.
             </p>
         </section>
+        
+        <figure>
+            <img src="https://zhaikpress.kz/wp-content/oraloniri/news/img/2021/09/A94337F5-A738-40B9-879D-8201453961EE-e1632802124440.jpeg" alt="Вид на микрорайоны чешского типа">
+            <figcaption>
+                Вид на микрорайоны чешского типа
+            </figcaption>
+        </figure>
 
         <section>
             <h2 id="massmedia">Средства массовой информации</h2>
